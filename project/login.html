@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agromart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0be735beff.js" crossorigin="anonymous"></script>
+    <script src="agro.js" defer></script>
+    <link rel="icon" href="a.avif" id="ic">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign up</h1>
+            <form action="" id="myForm">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        
+                        <input type="text" id="name" placeholder="name" required>
+                        <div class="ccl"><i class="error fa-solid fa-circle-exclamation"></i></div>
+                    </div>
+                    <div class="error error-message" >Enter your name</div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="email" required>
+                        <div class="ccl"><i class=" error  error fa-solid fa-circle-exclamation"></i></div>
+                    </div>
+                    <div class="error-message error ">Enter email</div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="pass" placeholder="password" required>
+                       <div class="ccl"><i class=" error fa-solid fa-circle-exclamation" ></i></div> 
+                    </div>
+                    <div class="error-message error " >Enter password</div>
+                    <p>Lost password <a href="#" id="clk">Click Here!</a></p>
+                </div>
+                <div class="btn_field">
+                    <button type="submit" id="signup">Sign up</button>
+                    <button type="submit" id="signin" class="disable" >Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

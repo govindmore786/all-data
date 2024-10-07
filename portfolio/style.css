@@ -1,0 +1,83 @@
+body{background-color: #fab3a9;}
+input{background-color: #c6ad94;
+color: #463239;}
+::placeholder{color: #463239;}
+ img{border-radius: 100%; }
+   textarea {background-color: #c6ad94;
+color: #463239;}
+#a{background-color: #7fb285;
+color: brown;}
+#box{background-color: #463239;}
+.hd{background-color: #7fb285;}
+#h1{text-align: center;
+text-transform: capitalize;}
+#para{font-family: 'Times New Roman', Times, serif;
+}
+#outer{font-size: 25px;}
+#inner{font-size: 10px;}
+#nav{background-color: black;
+color: white;
+height: 30px;
+border-color: white;
+border: 3px solid;
+}
+a{margin-right: 240px;}
+#btt{background-color: rgb(255, 191, 0);}
+#lg{font-size: 20px;
+color: rgb(255, 183, 0);}
+#uff{background-color: #7fb285;
+height: 50px;}
+#ohho{height: 50%;
+background-color: aqua;}
+div{height: 100px;
+width: 100px;
+}
+#box1{background-color: green;
+  
+  position: absolute;
+/*bottom: 10px;*/
+right: 2px;
+
+background-image: url(veer.jpg);
+background-size: cover;}
+.navbar{background-color: aqua;
+  display: flex;
+justify-content:space-evenly }
+a{text-decoration: none;}
+li{list-style-type: none;
+  display: inline;
+} 
+.outer{height: 400px;
+width: 400px;
+background-color: aqua;
+display: flex;
+justify-content:center;
+align-items : center;}
+.inner{height: 200px;
+width: 200px;
+background-color: #a9fad0;
+display: flex;
+ align-content: ;
+}
+div{height: 100px;
+  width: 100px;
+background-color: aqua;
+
+transition-duration: 2s}
+
+@media(max-width: 300px)
+  {div{
+    background-color: aquamarine;}}
+div:hover{background-color: #fab3a9;}
+@keyframes rotation {
+  from{transform: rotate(0deg)
+  }
+  to{transform: rotate(360deg)}
+}
+#load{border-radius: 90px;
+border: 20px solid blue;
+
+border-top: solid 20px;
+
+
+animation: rotation 2s ease 0s infinite ;}

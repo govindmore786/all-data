@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pass.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="form">
+    <h1>Welcome to the Password Manager</h1>
+    Hello everyone this webpage will help you to manage your Passwords.
+    
+    <h2>Your Passwords </h2><br>
+    <table>
+        <tr>
+            <th>Website</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Govind</td>
+            <td>20</td>
+        </tr>
+    </table><br>
+    <div class="pass">
+    <h2>Add a Password </h2>
+    <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+    
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <script>
+            document.addEventListener("click",function(){alert("hello")});
+          </script>
+    
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+    
+        <!-- Submit button -->
+      <div class="button"><input id="sub" type="submit" value="Submit"></div>
+      </form></div></div>
+      
+</body>
+</html>

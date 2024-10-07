@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {list-style: none;
+font-size: 30px;
+padding: 10px;
+color: #EEEEEE;}
+.nav{display: flex;
+    justify-content: space-around;
+    text-align: center;
+   margin-top: 0%;
+   background-color:#615EFC;
+}
+.def{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color:  #EEEEEE;;
+    font-size: 80px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#vr{padding-left: 300px;
+font-weight: bold;}
+#vr{padding-right: 300px;}
+#ab{padding-right: 30px;}
+body{background-color: #7E8EF1 ;
+overflow: hidden;
+} 
+.left{padding-top: 40px;}
+.right img{height: 80%;
+padding-top: 20px;}
+a {
+    text-decoration: none;
+}
+a :hover{color: #050C9C;
+font-size: 1.85rem;}
+.dropdown{
+    min-width: 15em;
+    position: relative;
+}
+/* .dropdown *{
+    box-sizing: border-box;
+} */
+.select{
+    background: #4f7adf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px #a9bce9 solid; */
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.selected{
+    font-size: 30px;
+   
+}
+/* .select-clicked{border: 2px #26489a solid;} */
+.caret{
+    /* width: 0;
+    height: 0; */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    
+}
+.caret-rotate {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease;
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #4c75c5;
+    border: 1px #5f85dd solid;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position:absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+}
+.menu li:hover{
+    background: #26489a;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}

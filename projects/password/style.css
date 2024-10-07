@@ -1,0 +1,31 @@
+li {list-style: none;
+    font-size: 30px;
+    padding: 10px;
+    color: #EEEEEE;
+cursor: pointer;}
+
+    ul{display: flex;
+        justify-content: space-around;
+        text-align: center;
+       margin-top: 0%;
+       background-color:#615EFC;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    table{border: 2px solid black;}
+    .form{padding-left: 300px;}
+    .pass{padding-left: 30px;}
+    #sub{font-size: large;
+    color: blue;
+border-color: #615EFC;
+padding: 1.8px;
+border-radius: 6px;
+}
+.button{padding-left: 10px;}
+#sub:hover {
+    background-color: rgb(43, 142, 223);
+    color: white;
+}
