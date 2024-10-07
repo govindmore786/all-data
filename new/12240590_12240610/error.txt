@@ -1,0 +1,43 @@
+%{
+#include <stdio.h>
+#include <stdlib.h>
+int yylex();
+void yyerror(const char *, const char *);
+%}
+
+%token INTEGER ADD SUB MUL DIV NEWLINE
+%left ADD SUB
+%left MUL DIV
+
+%%
+
+program: lines
+       ;
+
+lines: lines line
+     | line
+     ;
+
+line: expr NEWLINE
+    | NEWLINE
+    ;
+
+expr: expr ADD expr
+    | expr SUB expr
+    | expr MUL expr
+    | expr DIV expr
+    | INTEGER
+    ;
+
+%%
+
+int main() {
+    yyparse();
+    return 0;
+}
+
+void yyerror(const char *msg, const char *err_token) {
+    fprintf(stderr, "Syntax Error: %s '%s'\n", msg, err_token);
+    exit(EXIT_FAILURE);
+}
+
